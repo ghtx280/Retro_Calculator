@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="shortcut icon" href="icon/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="icon/logo.png">
+  <link rel="manifest" href="manifest.json" />
+  <script src="sw.js"></script>
+  <script src="sw-reg.js"></script>
+  <title>CALCULATOR</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="vse">
+    <div class="name">
+      <p>КАЛЬКУЛЯТОР КА-28</p>
+    </div>
+    <div class="num">
+      <div class="numGreen">
+        <p>0</p>
+      </div>
+    </div>
+    <div class="btn">
+      <div class="left">
+        <div class="top">
+          <div class="btn_c" onmousedown="clr()">
+            <p>C</p>
+          </div>
+          <div class="btn_m" onmousedown="op('*')">
+            <p>*</p>
+          </div>
+          <div class="btn_d" onmousedown="op('/')">
+            <p>/</p>
+          </div>
+        </div>
+        <div class="center">
+          <div class="btn_7" onmousedown="func(7)">
+            <p>7</p>
+          </div>
+          <div class="btn_8" onmousedown="func(8)">
+            <p>8</p>
+          </div>
+          <div class="btn_9" onmousedown="func(9)">
+            <p>9</p>
+          </div>
+          <div class="btn_4" onmousedown="func(4)">
+            <p>4</p>
+          </div>
+          <div class="btn_5" onmousedown="func(5)">
+            <p>5</p>
+          </div>
+          <div class="btn_6" onmousedown="func(6)">
+            <p>6</p>
+          </div>
+          <div class="btn_1" onmousedown="func(1)">
+            <p>1</p>
+          </div>
+          <div class="btn_2" onmousedown="func(2)">
+            <p>2</p>
+          </div>
+          <div class="btn_3" onmousedown="func(3)">
+            <p>3</p>
+          </div>
+        </div>
+        <div class="down">
+          <div class="btn_p" onmousedown="func('.')">
+            <p>.</p>
+          </div>
+          <div class="btn_0" onmousedown="func(0)">
+            <p>0</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="btn_a" onmousedown="op('+')">
+          <p>+</p>
+        </div>
+        <div class="btn_s" onmousedown="op('-')">
+          <p>-</p>
+        </div>
+        <div class="btn_e" onmousedown="e()">
+          <p>=</p>
+        </div>
+      </div>
+    </div>
+    <div class="setting">
+      <div class="vibro">
+        <div></div>
+        <p>вібро</p>
+      </div>
+      <div class="zvuk">
+        <div></div>
+        <p>звук</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
